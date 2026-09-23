@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: clamp(24px, 5vw, 48px) clamp(16px, 4vw, 32px);
+  background-color: #111827;
+  color: #f9fafb;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+}
+
+.page-intro {
+  max-width: 680px;
+  margin: 8px 0 0;
+  color: #d1d5db;
+}
+
+.display-session {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  background-color: #1f2937;
+}
+
+.display-session p {
+  margin: 0;
+}
+
+.display-session .display-session-status {
+  margin: 0;
+  color: #facc15;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.display-session .display-session-name {
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.display-session-time {
+  display: block;
+  margin-top: 6px;
+  color: #d1d5db;
+}
+
+.display-session .display-session-detail {
+  margin-top: 10px;
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+time,
+.display-session-detail {
+  font-variant-numeric: tabular-nums;
+}
+
+.grandprix-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.grandprix-card {
+  padding: 20px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  background-color: #1f2937;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.grandprix-card:hover {
+  border-color: #6b7280;
+}
+
+.grandprix-card:focus-within,
+.grandprix-card.open {
+  border-color: #facc15;
+}
+
+.grandprix-card.open {
+  background-color: #273449;
+}
+
+.grandprix-title {
+  margin: 0;
+}
+
+.grandprix-toggle {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.grandprix-toggle:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 3px;
+}
+
+.grandprix-card p {
+  margin: 8px 0 0;
+  color: #d1d5db;
+}
+
+.grandprix-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.grandprix-action {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 8px;
+  color: #facc15;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.toggle-icon {
+  display: inline-block;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.grandprix-card.open .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.grandprix-period {
+  display: block;
+  margin-top: 10px;
+  color: #d1d5db;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.circuit-name {
+  display: block;
+  margin: 6px 0 0;
+  color: #9ca3af;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.session-list {
+  display: none;
+  gap: 10px;
+  padding: 0;
+  margin: 16px 0 0;
+  list-style: none;
+}
+
+.grandprix-card.open .session-list {
+  display: grid;
+}
+
+.session-list li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid #374151;
+}
+
+.session-list li span:first-child {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.session-list li > * {
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .display-session,
+  .grandprix-card {
+    padding: 18px;
+  }
+
+  .display-session .display-session-name {
+    font-size: 18px;
+  }
+
+  .grandprix-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .session-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
