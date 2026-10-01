@@ -15,6 +15,11 @@ const grandPrixDetails = [
     flag: "🇧🇭",
     circuit: "セパン・インターナショナル・サーキット",
   },
+  {
+    grandPrix: "シンガポールGP",
+    flag: "🇸🇬",
+    circuit: "マリーナ・ベイ市街地コース",
+  },
 ];
 
 const sessions = [
@@ -87,6 +92,41 @@ const sessions = [
     sessionName: "決勝",
     startAt: "2026-10-04T16:00:00+09:00",
     endAt: "2026-10-04T18:00:00+09:00",
+  },
+  {
+    id: "2026-singapore-fp1",
+    grandPrix: "シンガポールGP",
+    sessionName: "フリー走行1",
+    startAt: "2026-10-09T17:30:00+09:00",
+    endAt: "2026-10-09T18:30:00+09:00",
+  },
+  {
+    id: "2026-singapore-sprintqualifying",
+    grandPrix: "シンガポールGP",
+    sessionName: "スプリント予選",
+    startAt: "2026-10-09T21:30:00+09:00",
+    endAt: "2026-10-09T22:30:00+09:00",
+  },
+  {
+    id: "2026-singapore-sprint",
+    grandPrix: "シンガポールGP",
+    sessionName: "スプリント",
+    startAt: "2026-10-10T18:00:00+09:00",
+    endAt: "2026-10-10T19:30:00+09:00",
+  },
+  {
+    id: "2026-singapore-qualifying",
+    grandPrix: "シンガポールGP",
+    sessionName: "予選",
+    startAt: "2026-10-10T22:00:00+09:00",
+    endAt: "2026-10-10T23:00:00+09:00",
+  },
+  {
+    id: "2026-singapore-race",
+    grandPrix: "シンガポールGP",
+    sessionName: "決勝",
+    startAt: "2026-10-11T21:00:00+09:00",
+    endAt: "2026-10-11T23:00:00+09:00",
   },
 ];
 
