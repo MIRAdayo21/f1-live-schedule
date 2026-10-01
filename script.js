@@ -6,11 +6,6 @@ const displaySessionDetail = document.querySelector(".display-session-detail");
 
 const grandPrixDetails = [
   {
-    grandPrix: "アゼルバイジャンGP",
-    flag: "🇦🇿",
-    circuit: "バクー・シティ・サーキット",
-  },
-  {
     grandPrix: "バーレーンGP in マレーシア",
     flag: "🇧🇭",
     circuit: "セパン・インターナショナル・サーキット",
@@ -23,41 +18,6 @@ const grandPrixDetails = [
 ];
 
 const sessions = [
-  {
-    id: "2026-azerbaijan-fp1",
-    grandPrix: "アゼルバイジャンGP",
-    sessionName: "フリー走行1",
-    startAt: "2026-09-24T17:30:00+09:00",
-    endAt: "2026-09-24T18:30:00+09:00",
-  },
-  {
-    id: "2026-azerbaijan-fp2",
-    grandPrix: "アゼルバイジャンGP",
-    sessionName: "フリー走行2",
-    startAt: "2026-09-24T21:00:00+09:00",
-    endAt: "2026-09-24T22:00:00+09:00",
-  },
-  {
-    id: "2026-azerbaijan-fp3",
-    grandPrix: "アゼルバイジャンGP",
-    sessionName: "フリー走行3",
-    startAt: "2026-09-25T17:30:00+09:00",
-    endAt: "2026-09-25T18:30:00+09:00",
-  },
-  {
-    id: "2026-azerbaijan-qualifying",
-    grandPrix: "アゼルバイジャンGP",
-    sessionName: "予選",
-    startAt: "2026-09-25T21:00:00+09:00",
-    endAt: "2026-09-25T22:00:00+09:00",
-  },
-  {
-    id: "2026-azerbaijan-race",
-    grandPrix: "アゼルバイジャンGP",
-    sessionName: "決勝",
-    startAt: "2026-09-26T20:00:00+09:00",
-    endAt: "2026-09-26T22:00:00+09:00",
-  },
   {
     id: "2026-bahrain-fp1",
     grandPrix: "バーレーンGP in マレーシア",
