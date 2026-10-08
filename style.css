@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -5,15 +6,15 @@
 body {
   margin: 0;
   padding: clamp(24px, 5vw, 48px) clamp(16px, 4vw, 32px);
-  background-color: #111827;
-  color: #f9fafb;
+  background-color: #f7f4ee;
+  color: #15151e;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
 main {
   width: 100%;
-  max-width: 960px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -24,15 +25,15 @@ h1 {
 .page-intro {
   max-width: 680px;
   margin: 8px 0 0;
-  color: #d1d5db;
+  color: #15151e;
 }
 
 .display-session {
   padding: 20px;
   margin-top: 20px;
-  border: 1px solid #374151;
+  border: 1px solid #d8d4cc;
   border-radius: 8px;
-  background-color: #1f2937;
+  background-color: #fbfaf7;
 }
 
 .display-session p {
@@ -41,7 +42,7 @@ h1 {
 
 .display-session .display-session-status {
   margin: 0;
-  color: #facc15;
+  color: #e10600;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.4;
@@ -56,7 +57,7 @@ h1 {
 .display-session-time {
   display: block;
   margin-top: 6px;
-  color: #d1d5db;
+  color: #15151e;
 }
 
 .display-session .display-session-detail {
@@ -78,26 +79,27 @@ time,
 }
 
 .grandprix-card {
-  padding: 20px;
-  border: 1px solid #374151;
+  padding: 14px 20px;
+  border: 1px solid #d8d4cc;
   border-radius: 8px;
-  background-color: #1f2937;
+  background-color: #fbfaf7;
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease;
 }
 
 .grandprix-card:hover {
-  border-color: #6b7280;
+  border-color: #aaa59c;
 }
 
 .grandprix-card:focus-within,
 .grandprix-card.open {
-  border-color: #facc15;
+  border-color: #e10600;
 }
 
 .grandprix-card.open {
-  background-color: #273449;
+  background-color: #fbfaf7;
+  border-color: #d8d4cc;
 }
 
 .grandprix-title {
@@ -116,13 +118,13 @@ time,
 }
 
 .grandprix-toggle:focus-visible {
-  outline: 3px solid #facc15;
+  outline: 3px solid #e10600;
   outline-offset: 3px;
 }
 
 .grandprix-card p {
   margin: 8px 0 0;
-  color: #d1d5db;
+  color: #62626c;
 }
 
 .grandprix-heading {
@@ -137,7 +139,7 @@ time,
   flex-shrink: 0;
   align-items: center;
   gap: 8px;
-  color: #facc15;
+  color: #e10600;
   font-size: 14px;
   font-weight: 700;
 }
@@ -155,7 +157,7 @@ time,
 .grandprix-period {
   display: block;
   margin-top: 10px;
-  color: #d1d5db;
+  color: #62626c;
   font-size: 14px;
   font-weight: 400;
 }
@@ -163,16 +165,16 @@ time,
 .circuit-name {
   display: block;
   margin: 6px 0 0;
-  color: #9ca3af;
+  color: #62626c;
   font-size: 14px;
   font-weight: 400;
 }
 
 .session-list {
   display: none;
-  gap: 10px;
+  gap: 4px;
   padding: 0;
-  margin: 16px 0 0;
+  margin: 10px 0 0;
   list-style: none;
 }
 
@@ -184,13 +186,13 @@ time,
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 12px;
-  padding: 10px 0;
-  border-top: 1px solid #374151;
+  padding: 6px 0;
+  border-top: 1px solid #d8d4cc;
 }
 
 .session-list li span:first-child {
   font-weight: 700;
-  color: #ffffff;
+  color: #15151e;
 }
 
 .session-list li > * {
@@ -217,4 +219,13 @@ time,
     grid-template-columns: 1fr;
     gap: 4px;
   }
+}
+
+.display-session {
+  border-top: 4px solid #e10600;
+}
+
+.grandprix-card.open,
+.grandprix-card:focus-within {
+  border-color: #d8d4cc;
 }
